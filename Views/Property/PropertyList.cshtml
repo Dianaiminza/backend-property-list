@@ -1,0 +1,23 @@
+﻿@model IEnumerable<dynamic>
+
+<h2>Property List</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Property Name</th>
+            <th>Property Type</th>
+            <th>Status Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var property in Model)
+        {
+            <tr>
+                <td>@property.PropertyName</td>
+                <td>@property.PropertyType</td>
+                <td>@property.StatusCode</td>
+            </tr>
+        }
+    </tbody>
+</table>
